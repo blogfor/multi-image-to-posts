@@ -19,15 +19,7 @@ add_action( 'wp_loaded', 'mitp_keyword_trace' );
 
 function mitp_keyword_trace( ) {
     
-    require 'ss-keyword-trace.php';
-      if( strpos($_SERVER['PHP_SELF'], 'wp-admin')==false)
-    {
-	if(!empty($_GET['s']) ) {
-		$keyword = trim($_GET['s']);
-                
-                save_keyword($keyword,@$_SERVER['HTTP_REFERER']);
-	}
-    }
+   
 	
 	
 }
@@ -44,7 +36,7 @@ function mitp_plugins_update()
 
 
 function mitp_admin_dashboard() {
-	require 'ss-admin-dashboard.php';
+	require 'mitp-admin-dashboard.php';
 }
 
 function mitp_menu() {
