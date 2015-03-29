@@ -36,11 +36,15 @@ function mitp_plugins_update()
 
 
 function mitp_admin_dashboard() {
+    
+    
 	require 'mitp-admin-dashboard.php';
+	
+	
 }
 
 function mitp_menu() {
-	add_menu_page( 'Keyword Statistics', 'Keyword Statistics', 'administrator', 'mitp-menu', 'mitp_admin_dashboard' );
+	add_menu_page( 'Multiple-Image', 'Multiple-Image', 'administrator', 'mitp-menu', 'mitp_admin_dashboard' );
 	
 	//add_submenu_page( 'ss-menu', 'Active Post Type', 'Active Post Type', 'administrator','active-post-type', 'active_post_type_func' );
 }
