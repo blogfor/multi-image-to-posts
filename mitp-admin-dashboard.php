@@ -163,5 +163,3 @@ foreach ( $post_types as $post_type ) {
          <div class="field"><input type="submit" id="SetSettings" name="SetSettings"></div>
          </div>
 </form>
-
- 
